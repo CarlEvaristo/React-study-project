@@ -1,9 +1,20 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" alt="logo" width="40px"/>
+            </nav>
+        </header>
+    )
+}
+
 function Page() {
     return (
-        <>
+        <>  
+            <Header/>
             <h1>Hello</h1>
             <ul>
                 <li>It's a popular library, so I'll be 
