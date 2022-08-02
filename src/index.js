@@ -5,7 +5,12 @@ function Header() {
     return (
         <header>
             <nav>
-                <img src="./react-logo.png" alt="logo" width="40px"/>
+                <img src="./react-logo.png" alt="logo"/>
+                <ul id="headerMenu">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
@@ -33,11 +38,11 @@ function Footer() {
 
 function Page() {
     return (
-        <>  
+        <div class="container">  
             <Header/>
             <MainContent />
             <Footer />
-        </>
+        </div>
     )
 }
 
